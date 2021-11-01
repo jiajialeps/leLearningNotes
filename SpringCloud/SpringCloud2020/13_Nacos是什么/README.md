@@ -106,8 +106,11 @@ Nacos在阿里巴巴内部有超过10万的实例运行，已经过了类似双�
 github经常抽风，可以使用：https://blog.csdn.net/buyaopa/article/details/104582141
 
 解压后：运行bin目录下的：startup.cmd
+linux环境：sh startup.sh -m standalone
+
 
 打开：`http://localhost:8848/nacos`
+登录账号密码:  nacos/nacos
 
 结果页面
 
