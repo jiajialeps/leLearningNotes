@@ -1,11 +1,11 @@
 今天为大家准备了JVM系列的常考面试题，学起来![图片](https://mmbiz.qpic.cn/mmbiz_png/EyPNic5dZCg8FHJlP9F0gqmZtLe5rbUYhINcdRasCIp7GnoPrhwkzBNlP9Sxv1CREKYOybicdv4kkcE0APbnibRtA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
 
 这是本期的 JVM面试题目录，不会的快快查漏补缺~
-
-![图片](https://mmbiz.qpic.cn/mmbiz_png/EyPNic5dZCg8FHJlP9F0gqmZtLe5rbUYh2RHD9v5yy3ClILc5eP2Z5lCUic8ibiaEjc2kibYDQ1ME1DNu0BX0UwhWHQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+<meta name="referrer" content="never">
+![图片<meta name="referrer" content="never">](<meta name="referrer" content="never">https://mmbiz.qpic.cn/mmbiz_png/EyPNic5dZCg8FHJlP9F0gqmZtLe5rbUYh2RHD9v5yy3ClILc5eP2Z5lCUic8ibiaEjc2kibYDQ1ME1DNu0BX0UwhWHQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
 
 ## 1. 什么是JVM内存结构？
-<meta name="referrer" content="never">
+
 ![图片](https://mmbiz.qpic.cn/mmbiz_png/EyPNic5dZCg8FHJlP9F0gqmZtLe5rbUYhqicuLoicq1aDveh6UYRKFexzPzNgdLAlnXVfmKDVbpJhhAJRN4Xia4Nicg/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
 
 jvm将虚拟机分为5大区域，程序计数器、虚拟机栈、本地方法栈、java堆、方法区；
