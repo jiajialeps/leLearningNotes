@@ -35,7 +35,7 @@
 - Gitee仓库：https://gitee.com/moxi159753/LearningNotes
 - Github仓库：https://github.com/moxi624/LearningNotes
 
-## 个人博客搭建
+## 个人博客搭建-转载陌溪大佬的公众号
 
 如果想搭建个人的博客系统，可以购买优惠服务器后，参考 [教程](http://www.moguit.cn/#/info?blogUid=8100dcb585fff77e3fa25eed50e3708e) 在服务器搭建 [蘑菇博客项目](https://gitee.com/moxi159753/mogu_blog_v2) 用于知识点的梳理
 
