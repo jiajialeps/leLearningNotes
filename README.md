@@ -15,25 +15,9 @@
 
 如果您要转载本仓库中的笔记到其它地方，欢迎添加笔记的仓库地址：[LearningNotes](https://gitee.com/moxi159753/LearningNotes)
 
-## 在线阅读
 
-为了更方便小伙伴的复习和查询，把本仓库做成一个在线的文档
 
-- 在线文档：http://note.moguit.cn/
-- 备用地址：http://moxi159753.gitee.io/learningnotes/
 
-## 内推
-
-目前字节跳动的 **广告系统** 和 **在线教育** 等方向拥有大量岗位需求，欢迎点击下方**内推链接**【内推码:PS33MAS】选择合适的岗位投递。小伙伴们使用**内推链接**投递后，可以通过 **公众号** 联系我跟进面试进度。
-
-春招&实习：[点我传送](https://job.toutiao.com/campus/m/position?category=&external_referral_code=PS33MAS&job_hot_flag=&keywords=&location=&project=&type=) ，社会招聘：[点我传送](https://job.toutiao.com/experienced/m/?external_referral_code=PS33MAS)
-
-## 仓库地址
-
-本仓库同步托管在Github和Gitee中
-
-- Gitee仓库：https://gitee.com/moxi159753/LearningNotes
-- Github仓库：https://github.com/moxi624/LearningNotes
 
 ## 个人博客搭建-转载陌溪大佬的公众号
 
