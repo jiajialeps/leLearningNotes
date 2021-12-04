@@ -91,7 +91,7 @@ SpringBoot和SpringCloud的版本选择也不是任意的，而是应该参考�
 
 ### 明细条目
 
-- 服务调用
+- 服务注册
   - Eureka
   - Zookeeper
   - Consul
