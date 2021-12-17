@@ -1,7 +1,0 @@
-1.面试人自我介绍
-2.聊项目  项目遇到的难点如何解决
-3.技术基础知识
-1）hashmap 
-2）mysql
-3）redis
-4）SpringBoot/Cloude
