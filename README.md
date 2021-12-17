@@ -15,63 +15,9 @@
 
 如果您要转载本仓库中的笔记到其它地方，欢迎添加笔记的仓库地址：[LearningNotes](https://gitee.com/moxi159753/LearningNotes)
 
-## 在线阅读
 
-为了更方便小伙伴的复习和查询，把本仓库做成一个在线的文档
 
-- 在线文档：http://note.moguit.cn/
-- 备用地址：http://moxi159753.gitee.io/learningnotes/
 
-## 内推
-
-目前字节跳动的 **广告系统** 和 **在线教育** 等方向拥有大量岗位需求，欢迎点击下方**内推链接**【内推码:PS33MAS】选择合适的岗位投递。小伙伴们使用**内推链接**投递后，可以通过 **公众号** 联系我跟进面试进度。
-
-春招&实习：[点我传送](https://job.toutiao.com/campus/m/position?category=&external_referral_code=PS33MAS&job_hot_flag=&keywords=&location=&project=&type=) ，社会招聘：[点我传送](https://job.toutiao.com/experienced/m/?external_referral_code=PS33MAS)
-
-## 仓库地址
-
-本仓库同步托管在Github和Gitee中
-
-- Gitee仓库：https://gitee.com/moxi159753/LearningNotes
-- Github仓库：https://github.com/moxi624/LearningNotes
-
-## 个人博客搭建
-
-如果想搭建个人的博客系统，可以购买优惠服务器后，参考 [教程](http://www.moguit.cn/#/info?blogUid=8100dcb585fff77e3fa25eed50e3708e) 在服务器搭建 [蘑菇博客项目](https://gitee.com/moxi159753/mogu_blog_v2) 用于知识点的梳理
-
-> 【阿里云】云服务器双12狂欢特惠，1核2G 5M轻量级应用服务器114元/年【博主使用】 [点我传送](https://www.aliyun.com/minisite/goods?userCode=w7aungxw) 
->
-> 【腾讯云】云产品限时秒杀，爆款1核2G云服务器，首年99元（老用户重新用微信QQ注册即可） [点我进入](https://curl.qcloud.com/zry6xub9)
-
-## 公众号文章
-
-> 来源陌溪的个人公众号：**[陌溪教你学编程](https://gitee.com/moxi159753/wx_picture/raw/master/picture/%E5%85%AC%E4%BC%97%E5%8F%B7.jpg)**
-
-- [大型生产事故,开源项目蘑菇博客差点被删库](https://mp.weixin.qq.com/s/UprMwItKjJ-Bcj1Z5ija1g)
-- [蘑菇博客从0到2000Star，分享我的Java自学路线图](https://mp.weixin.qq.com/s/3u6OOYkpj4_ecMzfMqKJRw)
-- [陌溪在开源社区逛了几个月, 终于写下了蘑菇博客的开源文档](https://mp.weixin.qq.com/s/VXH19dQRkNtPbzDMVXwsPQ)
-- [从三本院校到斩获字节跳动后端研发Offer-讲述我的故事](https://mp.weixin.qq.com/s/c4rR_aWpmNNFGn-mZBLWYg)
-- [年轻人不讲码德,竟然用1核2G服务器来部署蘑菇博客](https://mp.weixin.qq.com/s/geq912p7hinDEeNU1Py1jQ)
-- [蘑菇博客前端页面如何引入矢量图标](https://mp.weixin.qq.com/s/mO0HlIZsjdluY16YW8rOdA)
-- [Windows+VMware快速搭建蘑菇博客本地开发环境](https://mp.weixin.qq.com/s/9aB7yyP9j67MS-zhigJFWA)
-- [陌溪在公众号摸滚翻爬半个月，整理的入门指南](https://mp.weixin.qq.com/s/Jj1i-mD9Tw0vUEFXi5y54g)
-- [Nacos出现重大安全漏洞,开源项目险遭脱库](https://mp.weixin.qq.com/s/8DtVEtJZU47Ugr802l9ZWg)
-- [还在人肉运维？看看蘑菇博客是如何实现自动化部署](https://t.1yb.co/kQ3A)
-- [使用IDEA发布蘑菇博客Docker镜像到服务器](https://t.1yb.co/kQ3P)
-- [陌溪在Github网上冲浪时遇到的问题](https://t.1yb.co/kQ3X)
-- [陌溪终于有时间写代码了](https://t.1yb.co/kQ40)
-- [开源项目蘑菇博客是如何集成第三方登录](https://t.1yb.co/kQ4e)
-- [SpringBoot项目启动时增加自定义Banner](https://t.1yb.co/kQ4h)
-- [蘑菇博客Golang版安装指南](https://t.1yb.co/kQ4k)
-- [开源项目蘑菇博客如何集成Minio对象存储服务器](https://t.1yb.co/kRXt)
-- [读者问:有没有高效的记视频笔记方法？](https://t.1yb.co/msyJ)
-- [不限速的阿里云盘PC桌面版本来了~](https://t.1yb.co/pPOW)
-- [万字长文带你学习ElasticSearch](https://t.1yb.co/pPPo)
-- [一文带你了解轻量性日志采集器Beats的使用](https://t.1yb.co/pPQ9)
-- [如何使用一条命令完成蘑菇博客的部署？](https://t.1yb.co/pPQr)
-- [双非本科，折戟成沙铁未销，九面字节终上岸！](https://mp.weixin.qq.com/s/SRf2f8wFFyjz2BUUXD_pmg)
-- [如何给蘑菇博客搭建一套分布式日志收集系统？](https://mp.weixin.qq.com/s/AvF_IAZobOyerhM7moOBLw)
-- [蘑菇博客被跨站脚本攻击了？](https://mp.weixin.qq.com/s/ogKcfvfix8cVsmSENj-nKQ)
 
 ## Java
 
