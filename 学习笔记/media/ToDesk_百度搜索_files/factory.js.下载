@@ -1,0 +1,1 @@
+(window.ESL_define||define)("ecamd/openservice/factory",["require","./service"],function(require){var e=require("./service");return{create:function(r,n){return new e(r,n)}}});
