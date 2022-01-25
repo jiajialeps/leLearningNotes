@@ -545,6 +545,16 @@ select * from employee where age between 18 and 28;
 
 　　B+ 树的深度更小，IO较少，效率更高
 
+**B+tree 和红黑树**
+
+![图片](https://mmbiz.qpic.cn/mmbiz_jpg/9mQQWOf4KRIsYJvGP4MRo9Jf98qQJ4NqXI8esnc9de05HicvSd19cuFwWEqxTO4ibmnVsGxt5d97bgmXntxSVF3Q/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+
+对于有 N 个叶子节点的 B+tree，搜索复杂度为 **「O(logdN)」** ,d 是指 degree 是指 B+tree 的度，表示节点允许的最大子节点个数为 d 个，在实际的运用中 d 值是大于 100 的，即使数据达到千万级别时候 B+tree 的高度依然维持在 3-4 左右，保证了 3-4 次磁盘 I/O 就能查到目标数据。
+
+![图片](https://mmbiz.qpic.cn/mmbiz_jpg/9mQQWOf4KRIsYJvGP4MRo9Jf98qQJ4Nq5DCkq9icXGfQ2v1HreQvsHPAlHf5vmJJiazqAhSibOic0FNPtYCGCqu5UQ/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+
+从上图中可以看出红黑树是二叉树，节点的子节点个数最多为 2 个，意味着其搜索复杂度为**「O(logN)」** ，比 B+ 树高出不少，因此红黑树检索到目标数据所需经理的磁盘 I/O 次数更多。
+
 
 
 #### 为什么不使用B树呢？
@@ -555,12 +565,12 @@ select * from employee where age between 18 and 28;
 
 B树相对于平衡二叉树，就可以存储更多的数据，高度更低。但是最后为甚选择B+树呢？因为B+树是B树的升级版：
 
-> ❝
->
-> - B+树非叶子节点上是不存储数据的，仅存储键值，而B树节点中不仅存储键值，也会存储数据。innodb中页的默认大小是16KB，如果不存储数据，那么就会存储更多的键值，相应的树的阶数（节点的子节点树）就会更大，树就会更矮更胖，如此一来我们查找数据进行磁盘的IO次数有会再次减少，数据查询的效率也会更快。
-> - B+树索引的所有数据均存储在叶子节点，而且数据是按照顺序排列的，链表连着的。那么B+树使得范围查找，排序查找，分组查找以及去重查找变得异常简单。
->
-> ❞
+* B+树非叶子节点上是不存储数据的，仅存储键值，而B树节点中不仅存储键值，也会存储数据。innodb中页的默认大小是16KB，如果不存储数据，那么就会存储更多的键值，相应的树的阶数（节点的子节点树）就会更大，树就会更矮更胖，如此一来我们查找数据进行磁盘的IO次数有会再次减少，数据查询的效率也会更快。
+
+* B+树索引的所有数据均存储在叶子节点，而且数据是按照顺序排列的，链表连着的。那么B+树使得范围查找，排序查找，分组查找以及去重查找变得异常简单。
+
+两棵树的插入实现：[B-tree](https://www.cs.usfca.edu/~galles/visualization/BTree.html)  [B+tree](https://www.cs.usfca.edu/~galles/visualization/BPlusTree.html) 
+各种图树算法的演示：[算法](https://www.cs.usfca.edu/~galles/visualization/Algorithms.html)
 
 在B树中，你可以将键和值存放在内部节点和叶子节点；但在B+树中，内部节点都是键，没有值，叶子节点同时存放键和值。
 

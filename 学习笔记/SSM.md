@@ -8,7 +8,7 @@ MVC：MVC是一种设计模式
 
 #### 1）MVC的原理图：
 
-![](https://gitee.com/jiajiales/learningNotes/raw/master/%E9%9D%A2%E7%BB%8F/media/MVC.png)
+![](https://gitee.com/jiajiales/learningNotes/raw/master/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/media/MVC.png)
 
 M-Model 模型（完成业务逻辑：有javaBean构成，service+dao+entity）
 
@@ -18,7 +18,7 @@ C-Controller 控制器（接收请求—>调用模型—>根据结果派发页�
 
 #### 2）SpringMVC框架结构
 
-![img](https://gitee.com/jiajiales/learningNotes/raw/master/%E9%9D%A2%E7%BB%8F/media/SpringMVC.png)
+![img](https://gitee.com/jiajiales/learningNotes/raw/master/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/media/SpringMVC.png)
 
 **看到这个图大家可能会有很多的疑惑，现在我们来看一下这个图的步骤：（可以对比MVC的原理图进行理解）**
 
@@ -70,45 +70,17 @@ C-Controller 控制器（接收请求—>调用模型—>根据结果派发页�
 
  
 
-　　**⑥拦截器可以获取IOC容器中的各个bean，而过滤器就不行，这点很重要，在拦截器里注入一个service，可以调用业务逻辑。**
-
- 
-
-　　**⑥拦截器可以获取IOC容器中的各个bean，而过滤器就不行，这点很重要，在拦截器里注入一个service，可以调用业务逻辑。**
-
-　　***\*⑥拦截器可以获取IOC容器中的各个bean，而过滤器就不行，这点很重要，在拦截器里注入一个service，可以调用业务逻辑。\****
-
- 
-
-***\*拦截器可以获取ioc中的service bean实现业务逻辑，\*\*\*\*拦截器可以获取ioc中的service bean实现业务逻辑，\*\*\*\*\*\*\*\*拦截器可以获取ioc中的service bean实现业务逻辑，\*\*\*\*\****
+***拦截器可以获取ioc中的service bean实现业务逻辑，\*\*\*\*拦截器可以获取ioc中的service bean实现业务逻辑，\*\*\*\*\*\*\*\*拦截器可以获取ioc中的service bean实现业务逻辑，\*\*\*\*\****
 
  
 
 触发时机
-
-触发时机
-
-触发时机
-
-有个专业词语叫触发时机
-
-有个专业词语叫触发时机
 
 有个专业词语叫触发时机
 
 1.过滤器和拦截器触发时机不一样:
 
-　　过滤器是在请求进入容器后，但请求进入servlet之前进行预处理的。请求结束返回也是，是在servlet处理完后，返回给前端之前。
-
-1.过滤器和拦截器触发时间和地点不一样:
-
-　　过滤器是在请求进入容器后，但请求进入servlet之前进行预处理的。请求结束返回也是，是在servlet处理完后，返回给前端之前。
-
-1.过滤器和拦截器触发时间和地点不一样:
-
-　　过滤器是在请求进入容器后，但请求进入servlet之前进行预处理的。请求结束返回也是，是在servlet处理完后，返回给前端之前。
-
- 
+　　过滤器是在请求进入容器后，但请求进入servlet之前进行预处理的。请求结束返回也是，是在servlet处理完后，返回给前端之前。 
 
 总结：过滤器包裹住servlet，servlet包裹住拦截器。
 
@@ -211,19 +183,7 @@ chain.doFilter(request, response);这个方法的调用作为分水岭。事实�
 
 　　3.SpringMVC的机制是由同一个Servlet来分发请求给不同的Controller，其实这一步是在Servlet的service()方法中执行的。所以过滤器、拦截器、service()方法，dispatc()方法的执行顺序应该是这样的，大致画了个图：其实非常好测试，自己写一个过滤器，一个拦截器，然后在这些方法中都加个断点，一路F8下去就得出了结论。
 
- 
-
-4.SpringMVC的机制是由同一个Servlet来分发请求给不同的Controller，其实这一步是在Servlet的service()方法中执行的。
-
-5.，SpringMVC的机制是由同一个Servlet来分发请求给不同的Controller，其实这一步是在Servlet的service()方法中执行的。
-
 6.SpringMVC的机制是由同一个Servlet来分发请求给不同的Controller，其实这一步是在Servlet的service()方法中执行的。
-
- 
-
-7.还有，拦截器是spring容器的，是spring支持的，
-
-7.还有，拦截器是spring容器的，是spring支持的，
 
 7.还有，拦截器是spring容器的，是spring支持的，
 
@@ -251,7 +211,7 @@ chain.doFilter(request, response);这个方法的调用作为分水岭。事实�
 
 1.以ApplocationContext上下文单例模式装配bean为例，深入探讨bean的生命周期：
 
-![img](https://gitee.com/jiajiales/learningNotes/raw/master/%E9%9D%A2%E7%BB%8F/media/SingleSpringBean.png)
+![img](https://gitee.com/jiajiales/learningNotes/raw/master/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/media/SingleSpringBean.png)
 
 
 
@@ -259,7 +219,7 @@ chain.doFilter(request, response);这个方法的调用作为分水岭。事实�
 
 2.以Spring Factory装配bean为例：
 
-![img](https://gitee.com/jiajiales/learningNotes/raw/master/%E9%9D%A2%E7%BB%8F/media/FactorySpringBean.png)
+![img](https://gitee.com/jiajiales/learningNotes/raw/master/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/media/FactorySpringBean.png)
 
 
 
@@ -370,27 +330,6 @@ AspectJ 则属于编译时增强，主要有3种方式：
 BeanFactory 是 Bean 的工厂， ApplicationContext 的父类，IOC 容器的核心，负责生产和管理 Bean 对象。
 
 FactoryBean 是 Bean，可以通过实现 FactoryBean 接口定制实例化 Bean 的逻辑，通过代理一个Bean对象，对方法前后做一些操作。
-
-### 6.SpringBean的生命周期说说？
-
-SpringBean 生命周期简单概括为4个阶段：
-
-1. 实例化，创建一个Bean对象
-
-2. 填充属性，为属性赋值
-
-3. 初始化
-
-4. - 如果实现了`xxxAware`接口，通过不同类型的Aware接口拿到Spring容器的资源
-   - 如果实现了BeanPostProcessor接口，则会回调该接口的`postProcessBeforeInitialzation`和`postProcessAfterInitialization`方法
-   - 如果配置了`init-method`方法，则会执行`init-method`配置的方法
-
-5. 销毁
-
-6. - 容器关闭后，如果Bean实现了`DisposableBean`接口，则会回调该接口的`destroy`方法
-   - 如果配置了`destroy-method`方法，则会执行`destroy-method`配置的方法
-
-![图片](https://mmbiz.qpic.cn/mmbiz_jpg/ibBMVuDfkZUnmFsqZZ4gkrIRbV5o351H2AzW6WIZjiaXWE6LUS5J66vgqhicU60FNxIf0V0mv8QqssYniaFBoFibraw/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
 
 ### 7.Spring是怎么解决循环依赖的？
 
@@ -602,30 +541,7 @@ public class OrderServiceImpl implements OrderService {
 
 
 
-### 11.最后，说说Spring Boot 启动流程吧？
-
-这个流程，网上一搜基本都是这张图了，我也不想再画一遍了。那其实主要的流程就几个步骤：
-
-1. 准备环境，根据不同的环境创建不同的Environment
-2. 准备、加载上下文，为不同的环境选择不同的Spring Context，然后加载资源，配置Bean
-3. 初始化，这个阶段刷新Spring Context，启动应用
-4. 最后结束流程
-
-![图片](https://mmbiz.qpic.cn/mmbiz_jpg/ibBMVuDfkZUnmFsqZZ4gkrIRbV5o351H2yht9fh2bYQ6zDibebR46AiaKz50jvicw2L6sXNz79CNrCbrpnibxw4QCJg/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
-
-
-
-总览：
-上图为SpringBoot启动结构图，我们发现启动流程主要分为三个部分，
-
-* 第一部分进行SpringApplication的初始化模块，配置一些基本的环境变量、资源、构造器、监听器。
-* 第二部分实现了应用具体的启动方案，包括启动流程的监听模块、加载配置环境模块、及核心的创建上下文环境模块。
-* 第三部分是自动化配置模块，该模块作为springboot自动配置核心，在后面的分析中会详细讨论。在下面的启动程序中我们会串联起结构中的主要功能。
-  
-
-
-
-### **SpringBoot的启动流程:**
+### 11.**SpringBoot的启动流程:**
 
 **1.当我们启动SpringBoot的时候，先动用启动类中的静态run方法**
 
@@ -681,23 +597,9 @@ spring-boot-starter-data-rest - 使用 Spring Data REST 公布简单的 REST 服
 
 
 
-## 四、SpringBoot的启动过程
+## 四、Spring 和 SpringBoot 的区别 ?
 
-
-
-Spring Boot程序有一个入口，就是main方法。main里面调用**SpringApplication.run()**启动整个Spring Boot程序，该方法所在类需要使用**@SpringBootApplication**复合注解。
-
-其中需要关注的是：
-
-**@SpringBootApplication**注解其实是包含了三个注解：
-
-（1）**@EnableAutoConfiguration**：SpringBoot根据应用所声明的依赖来对Spring框架进行自动配置。简单概括一下就是，是借助@Import的帮助，将所有符合自动配置条件的bean定义加载到IoC容器。
-
-（2）**@Configuration：**它就是JavaConfig形式的Spring Ioc容器的配置类。被标注的类等于在spring的XML配置文件中(applicationContext.xml)，装配所有bean事务，提供了一个spring的上下文环境。
-
-（3）**@ComponentScan：**组件扫描，可自动发现和装配Bean，功能其实就是自动扫描并加载符合条件的组件或者bean定义，最终将这些bean定义加载到IoC容器中。
-
-**Java面试题：Spring 和 SpringBoot 的区别 ?**
+****
 
 ##### Spring ：
 

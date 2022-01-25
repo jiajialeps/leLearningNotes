@@ -1,12 +1,4 @@
-- 
-
-# 干货 | BAT等一线大厂 Elasticsearch面试题解读
-
-# Elasticsearch面试题汇总与解析
-
-https://blog.csdn.net/liuerchong/article/details/109257115?spm=1001.2101.3001.6650.4&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7Edefault-4.essearch_pc_relevant&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7Edefault-4.essearch_pc_relevant
-
-
+# Elasticsearch
 
 ### 1、elasticsearch了解多少，说说你们公司es的集群架构，索引数据大小，分片有多少，以及一些调优手段 。
 
@@ -62,7 +54,7 @@ https://blog.csdn.net/liuerchong/article/details/109257115?spm=1001.2101.3001.66
 
 > 倒排索引，相反于一篇文章包含了哪些词，它从词出发，记载了这个词在哪些文档中出现过，由两部分组成——词典和倒排表。
 
-`加分项`：倒排索引的底层实现是基于：FST（Finite State Transducer）数据结构。 lucene从4+版本后开始大量使用的数据结构是FST。FST有两个优点：
+​	`加分项`：倒排索引的底层实现是基于：FST（Finite State Transducer）数据结构。 lucene从4+版本后开始大量使用的数据结构是FST。FST有两个优点：
 
 - 1）空间占用小。通过对词典中单词前缀和后缀的重复利用，压缩了存储空间；
 - 2）查询速度快。O(len(str))的查询时间复杂度。
@@ -251,21 +243,13 @@ Lucene是有索引和搜索的两个过程，包含索引创建，索引，搜�
 
 1、搜索被执行成一个两阶段过程，我们称之为 Query Then Fetch；
 
-
-
 2、在初始**查询阶段**时，查询会广播到索引中每一个分片拷贝（主分片或者副本分片）。 每个分片在本地执行搜索并构建一个匹配文档的大小为 from + size 的优先队列。
 
 PS：在搜索的时候是会查询 Filesystem Cache 的，但是有部分数据还在 MemoryBuffer，所以搜索是近实时的。
 
-
-
 3、每个分片返回各自优先队列中 **所有文档的 ID 和排序值** 给协调节点，它合并这些值到自己的优先队列中来产生一个全局排序后的结果列表。
 
-
-
 4、接下来就是 **取回阶段**，协调节点辨别出哪些文档需要被取回并向相关的分片提交多个 GET 请求。每个分片加载并 丰富 文档，如果有需要的话，接着返回文档给协调节点。一旦所有的文档都被取回了，协调节点返回结果给客户端。
-
-
 
 5、补充：Query Then Fetch 的搜索类型在文档相关性打分的时候参考的是本分片的数据，这样在文档数量较少的时候可能不够准确，DFS Query Then Fetch 增加了一个预查询的处理，询问 Term 和 Document frequency，这个评分更准确，但是性能会变差。*
 
@@ -315,15 +299,9 @@ PS：在搜索的时候是会查询 Filesystem Cache 的，但是有部分数据
 
 **补充：索引阶段性能提升方法**
 
-
-
 1、使用批量请求并调整其大小：每次批量数据 5–15 MB 大是个不错的起始点。
 
-
-
 2、存储：使用 SSD
-
-
 
 3、段和合并：Elasticsearch 默认值是 20 MB/s，对机械磁盘应该是个不错的设置。如果你用的是 SSD，可以考虑提高到 100–200 MB/s。如果你在做批量导入，完全不在意搜索，你可以彻底关掉合并限流。另外还可以增加
 
@@ -336,8 +314,6 @@ index.translog.flush_threshold_size 设置，从默认的 512 MB 到更大一些
 
 
 ### **17、对于 GC 方面，在使用 Elasticsearch 时要注意什么？**
-
-
 
 1、SEE：[https://elasticsearch.cn/article/32](https://link.zhihu.com/?target=https%3A//elasticsearch.cn/article/32)
 
