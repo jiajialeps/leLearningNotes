@@ -1,0 +1,24 @@
+graph TD
+    A[Throwable] --> B[Exception]
+    A --> C[Error]
+
+    B --> B1[IOException]
+    B --> B2[SQLException]
+    B --> B3[ReflectiveOperationException]
+    B --> B4[InterruptedException]
+    B --> B5[RuntimeException]
+
+    B5 --> B5_1[NullPointerException]
+    B5 --> B5_2[ClassCastException]
+    B5 --> B5_3[ArrayIndexOutOfBoundsException]
+    B5 --> B5_4[StringIndexOutOfBoundsException]
+    B5 --> B5_5[ArithmeticException]
+    B5 --> B5_6[IllegalArgumentException]
+    B5 --> B5_7[IllegalStateException]
+    B5 --> B5_8[ConcurrentModificationException]
+    B5 --> B5_9[NumberFormatException]
+
+    C --> C1[StackOverflowError]
+    C --> C2[OutOfMemoryError]
+    C --> C3[VirtualMachineError]
+    C --> C4[AssertionError]
